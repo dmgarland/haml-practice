@@ -17,7 +17,7 @@ ruby example.rb
 git clone <this repo>
 cd haml-practice
 docker build -t haml-example .
-docker run -p 4567:4567 haml-example
+docker run -p 4567:4567 -v $(pwd):/usr/src/app haml-example
 ```
 
 Then visit http://localhost:4567 and you should see an amazing homepage
