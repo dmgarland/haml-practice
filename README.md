@@ -9,8 +9,18 @@ git clone <this repo>
 cd haml-practice
 bundle
 ruby example.rb
-open http://localhost:4567
 ```
+
+## Quickstart (Docker)
+
+```bash
+git clone <this repo>
+cd haml-practice
+docker build -t haml-example .
+docker run -p 4567:4567 haml-example
+```
+
+Then visit http://localhost:4567 and you should see an amazing homepage
 
 ## TODO
 

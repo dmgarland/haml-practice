@@ -1,5 +1,7 @@
 require 'sinatra'
 
+set :bind, '0.0.0.0'
+
 def items
 @items = [
   { name: 'Milk', price: 89 },
